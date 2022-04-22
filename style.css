@@ -1,0 +1,447 @@
+.collapse{
+    height: 60px;
+    background :#9FBFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo{
+	max-width: 100px;
+	height: auto;
+    vertical-align: middle;
+}
+
+/*Responsive Navbar*/
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+    }
+
+    .openbutton{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        
+        background :#9FBFFF;
+        border-radius: 0%;
+        box-shadow: 0 0 0 3px #9FBFFF,
+        inset 0 0 0 1px #fff;
+    }
+
+    .closebutton{
+        border-radius: 0%;
+        border:0;
+        display: block; 
+        margin: 0 auto;
+        margin-top : 20px
+        
+    }
+
+
+    .nav-item::after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #70726E;
+      }
+
+
+    .bi-person-circle{
+        color: #495773 ;
+        font-size: 25px;
+    }
+
+    .navbar-nav{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
+
+.bi-x{
+    font-size:30px;
+    margin: 0
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+.navbar .navbar-collapse {
+    text-align: center;
+  }
+
+.container-logo{
+    width:auto;
+    background : #BFA3BF;
+    text-align: center;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    border-radius: 15px;
+}
+
+body{
+    background-color: white;
+    padding-top: 200px;
+
+}
+
+li{
+    font-size: 1rem;
+    font-weight: 400px;
+    font-family: poppins,sans-serif;
+    font-weight: bold;
+}
+
+.row{
+    width:auto;
+}
+
+.card{
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    width: 28rem;
+    background-color: #C1E7E3;
+    transition-timing-function: ease;
+    transition: width 0.5s;
+}
+
+.card-title{
+    text-decoration: underline;
+    text-underline-position: under;
+    color:black;
+}
+
+.card:hover{
+    width: 34rem;
+    transition-timing-function: ease;
+    transition: width 0.5s;
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+.bi-person-circle{
+    font-size: 35px;
+    margin-right : 30px;
+    color: #495773 ;
+
+}
+}
+/*Page utilisateurs*/
+@media (min-width: 992px) {
+.table{
+    width: 1100px !important;
+    margin: auto;
+    background-color:#C1E7E3;
+    border-radius: 10px;
+} 
+}
+.userpage{
+    font-weight: bold;
+    margin-left:20px;
+}
+
+.deco{
+    position :relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: -10px;
+
+}
+
+.createbutton{
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:20px;
+    vertical-align: middle;
+}
+
+.adminbutton{
+    margin-bottom:20px
+}
+/*-----------------------*/
+
+/*RESERVATION*/
+@media (min-width: 992px) {
+.rouge{
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    clear: both;
+    background:#555555;
+}
+
+.datepicker-dropdown {
+top: 0;
+left: 0;
+padding: 4px;
+background-color: #2C6E8E;
+border-radius: 10px;
+ 
+}
+
+
+.datepicker table tr td,
+ 
+.datepicker table tr th {
+ 
+text-align: center;
+width: 30px;
+height: 30px;
+border-radius: 4px;
+border: none;
+color: black;
+ 
+}
+
+.datepicker table tr td.day:hover,
+.datepicker table tr td.focused {
+background: #555555;
+cursor: pointer;
+}
+
+.activeClass{
+    background: red; 
+}
+
+.buttonreservation{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+}
+/*-----------------*/
+
+/*Form STYLE desktop*/
+@media (min-width: 992px) {
+.form-group-style{
+    padding-top: 18px;
+    width: 50%;
+    margin: auto;
+}
+
+.form-style{
+    width: 700px !important;
+    margin: auto;
+    background-color:#C1E7E3;
+    border-radius: 10px;
+}
+.button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.form-select-style{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+}
+/*------------*/
+
+
+/*Index*/
+
+.centered{
+    display: block ;
+    padding-top: 18px;
+    width: 50%;
+    margin: 0 auto;
+    position:relative;
+    left:100px;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: poppins,sans-serif;
+
+}
+
+
+.index{
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: poppins,sans-serif;
+}
+
+/*--------------*/
+
+
+/*Messagerie*/
+
+.messagerie{
+    width: 50%;
+    margin-left: 30px;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: poppins,sans-serif;
+}
+
+
+/*------------*/
+/*Mobile FORM*/
+@media (max-width: 992px) {
+    .form-group::after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 80%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #70726E;
+      }
+
+    .form-group-style{
+        padding-top: 18px;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .form-style{
+        width: auto !important;
+        margin: auto;
+        background-color:#C1E7E3;
+        border-radius: 10px;
+    }
+
+    .button{
+        width: 200px;
+        margin-top: 18px;
+        display: block;
+        margin-left : auto;
+        margin-right: auto;
+        margin-bottom : 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .form-select-style{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+
+}
+
+
+/*Responsive table USER PAGE*/
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+#page-wrap {
+	margin: 50px;
+}
+
+	/* 
+	Style - Desktops
+	*/
+	table { 
+		width: 100%; 
+		border-collapse: collapse; 
+	}
+	/* table-striped */
+	tr:nth-of-type(odd) { 
+		background: #dcfffb; 
+	}
+
+	th { 
+		background: #333; 
+		color: black; 
+		font-weight: bold; 
+	}
+	td, th { 
+		padding: 6px; 
+		border: 1px solid #ccc; 
+		text-align: left; 
+	}
+  /* 
+	Mobile 
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+
+        thead {
+            display: none;
+            }
+            
+		table, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+
+		
+		td:before { 
+			/* Table header a gauche */
+
+            float: left;
+            font-weight: bold;
+            margin-right: 20px;
+		}
+		
+		/*
+		Label
+		*/
+		td:nth-of-type(1):before { content: "Etablissement"; }
+		td:nth-of-type(2):before { content: "Chambre"; }
+		td:nth-of-type(3):before { content: "Date de début"; }
+		td:nth-of-type(4):before { content: "Date de fin"; }
+		td:nth-of-type(5):before { content: "Prix"; }
+		td:nth-of-type(6):before { content: "Annuler"; }
+	}
+	
+	/* Smartphones ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
+	
+	/* iPads ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+		}
+	}

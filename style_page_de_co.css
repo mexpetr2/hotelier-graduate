@@ -1,0 +1,23 @@
+.container-fluid{
+    background-color: antiquewhite;
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 150px
+}
+
+.form-control{
+    width: 300px;
+}
+
+.btn-primary{
+    margin-top: 20px;
+}
+
+#end{
+    justify-content: end;
+}
